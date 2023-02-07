@@ -12,14 +12,13 @@ import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
 
-import web1 from '../public/web1.png';
+import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import {useState} from "react";
-
+import { useState } from "react";
 
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -42,7 +41,35 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Developed by Jordi</h1>
             <ul className="flex items-center">
-              <li>
+              <div className="flex">
+                <li className="mr-3">
+                  <a class="" href="#intro" title="intro">
+                    Intro
+                  </a>
+                </li>
+                <li className="mr-3">
+                  <a class="" href="#about" title="about">
+                    About
+                  </a>
+                </li>
+                <li className="mr-3">
+                  <a class="" href="#services" title="services">
+                    Services
+                  </a>
+                </li>
+                <li className="mr-3">
+                  <a class="" href="#works" title="works">
+                    Works
+                  </a>
+                </li>
+                <li className="mr-3">
+                  <a class="" href="#contact" title="contact us">
+                    Say Hello
+                  </a>
+                </li>
+              </div>
+
+              {/* <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className="cursor-pointer text-2xl"
@@ -55,7 +82,7 @@ export default function Home() {
                 >
                   Resume
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="text-center p-10">
@@ -63,7 +90,7 @@ export default function Home() {
               Jordi Burger
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl">
-              Designer, Developer & Artist
+              Designer, Developer & Analyst
             </h3>
             <p className="text-base py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
               Lets fight for a better future!
@@ -86,23 +113,20 @@ export default function Home() {
                 Using Design and Technology{" "}
               </span>
               to open up digital space and information systems for everyone.
-              Design Cities, its infratructure and make them save - thats the
-              vision. Society becomes a Start up.
+              Design Cities, its infrastructure and make them secure. Technology
+              should be a tool to design efficienct infrastructure enhance
+              cultural and technical information systems for the better.
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image class="mx-auto" src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
-              </h3>
-              <p className="py-2">
-                Minimalistic Desing and effective knowledge management systems
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools i used</h4>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Blender</p>
-              <p className="text-gray-800 py-1">Three.js</p>
+              <h3 className="text-lg font-medium pt-8 pb-2">Web Development</h3>
+              <p className="py-2">Frontend Development</p>
+              <h4 className="py-4 text-teal-600">Tools:</h4>
+              <p className="text-gray-800 py-1">HTML5, CSS ,JavaScript</p>
+              <p className="text-gray-800 py-1">React.js</p>
+              <p className="text-gray-800 py-1">Tailwindcss</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
@@ -113,29 +137,27 @@ export default function Home() {
                 height={100}
               />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Cyber Security: Red Team
               </h3>
-              <p className="py-2">
-                Minimalistic Desing and effective knowledge management systems
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools i used</h4>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Blender</p>
-              <p className="text-gray-800 py-1">Three.js</p>
+              <p className="py-2">Penetration Testing</p>
+              <h4 className="py-4 text-teal-600">Tools:</h4>
+              <p className="text-gray-800 py-1">...</p>
+              <p className="text-gray-800 py-1">...</p>
+              <p className="text-gray-800 py-1">...</p>
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image class="mx-auto" src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Cyber Security: Blue Team
               </h3>
               <p className="py-2">
                 Minimalistic Desing and effective knowledge management systems
               </p>
-              <h4 className="py-4 text-teal-600">Design tools i used</h4>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Blender</p>
-              <p className="text-gray-800 py-1">Three.js</p>
+              <h4 className="py-4 text-teal-600">Tools:</h4>
+              <p className="text-gray-800 py-1">...</p>
+              <p className="text-gray-800 py-1">...</p>
+              <p className="text-gray-800 py-1">...</p>
             </div>
           </div>
         </section>
@@ -143,9 +165,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1">Services</h3>
             <p className="text-base py-5 leading-8 text-gray-800">
-              <span className="text-teal-500">
-                Using Design and Technology{" "}
-              </span>
+              <span className="text-teal-500">Using Design and Technology</span>
               to open up digital space and information systems for everyone.
               Design Cities, its infratructure and make them save - thats the
               vision. Society becomes a Start up.
